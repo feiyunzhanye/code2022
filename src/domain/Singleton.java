@@ -1,7 +1,6 @@
 package domain;
 
 import java.io.*;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -37,7 +36,7 @@ public class Singleton {
         LazySingleton4 lazySingleton41 = (LazySingleton4) ois.readObject();
         System.out.println(lazySingleton4);
         System.out.println(lazySingleton41);
-
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
     }
 }
@@ -128,7 +127,6 @@ class LazySingleton4 implements Serializable {
     private LazySingleton4() {
 
     }
-
     public static LazySingleton4 getInstance() {
         if (instance == null) {
             synchronized (LazySingleton4.class) {
