@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @Author: ZhouYX
@@ -11,6 +12,12 @@ public class newke {
         if(ss.length == 0){
             return 0;
         }
+        TreeMap<String,Integer> map = new TreeMap<>(Collections.reverseOrder());
+        map.put(null,null);
+        HashMap<String,Integer> map1 = new HashMap<>();
+        map1.put(null,null);
+        AtomicInteger integer = new AtomicInteger();
+        integer.compareAndSet()
         return ss[ss.length-1].length();
     }
     public  static void  main(String [] args) throws Exception{
